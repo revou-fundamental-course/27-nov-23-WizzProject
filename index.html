@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALTIK - Kalkulator Matematik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id="logo">KALTIK</h1>
+      <nav>
+        <form>
+          <select name="listOfShape" id="listOfShape">
+            <option value="Segitiga">Segitiga</option>
+          </select>
+        </form>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <div class="container">
+          <article>
+            <div class="shape-container">
+              <figure>
+                <img src="assets/triangle.png" alt="gambar segitiga" />
+              </figure>
+              <!-- Shape Description -->
+              <div class="shape-description">
+                <p id="info-description"></p>
+                <p id="equation-formula"></p>
+                <p id="info-legend"></p>
+                <p id="info-list"></p>
+              </div>
+            </div>
+            <!-- Shape Image -->
+          </article>
+
+          <!-- Option Button -->
+          <div class="option-btn">
+            <button id="luas-btn">Luas</button>
+            <button id="keliling-btn">Keliling</button>
+          </div>
+
+          <!-- Input Value -->
+          <div class="input-box">
+            <h1 id="option-h1-display"></h1>
+            <fieldset>
+              <legend>Nilai Masukan:</legend>
+
+              <form>
+                <div class="input-form">
+                  <div class="wrap-input" id="wrap-a">
+                    <p id="label-a">a</p>
+                    <input type="number" id="input-a" min="1" />
+                  </div>
+                  <div class="wrap-input" id="wrap-b">
+                    <p id="label-b">b</p>
+                    <input type="number" id="input-b" min="1" />
+                  </div>
+                  <div class="wrap-input" id="wrap-c">
+                    <p id="label-c">c</p>
+                    <input type="number" id="input-c" min="1" />
+                  </div>
+                  <div class="wrap-input" id="wrap-h">
+                    <p id="label-h">h</p>
+                    <input type="number" id="input-h" min="1" />
+                  </div>
+                </div>
+              </form>
+
+              <!-- Submit Button -->
+              <div class="submit-btn">
+                <button id="hitung-btn">Hitung</button>
+                <button id="reset-btn">Reset</button>
+              </div>
+            </fieldset>
+          </div>
+
+          <!-- Calculation Result -->
+          <div class="result-box">
+            <fieldset>
+              <legend>Hasil Perhitungan:</legend>
+              <p id="calc-result-1"></p>
+              <p id="calc-result-2"></p>
+              <p id="calc-result-3"></p>
+            </fieldset>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p id="foo"></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

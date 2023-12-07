@@ -1,0 +1,218 @@
+body {
+  font-family: "Open Sauce One", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: 0 100px 0 100px;
+}
+
+header {
+  background-color: #f8fcff;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 100px 0 100px;
+  margin: 0;
+  height: 80px;
+  color: #05a95b;
+  box-shadow: 0px 0px 70px 6px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 70px 6px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 70px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+  font-family: "Lilita One", sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#listOfShape {
+  padding: 0 20px 0 20px;
+  width: 500px;
+  height: 42px;
+  border: 1.5px #c9e9f3 solid;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #05a95b;
+}
+
+.shape-container {
+  background-color: #f8fcff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 20px 50px 20px;
+  border: 1px #05a95b solid;
+  border-radius: 12px;
+  color: #05a95b;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.shape-description {
+  padding: 20px;
+}
+
+#option-h1-display {
+  font-size: 20px;
+  color: #05a95b;
+  padding: 0;
+  margin: 0 20px 0 20px;
+  text-align: center;
+}
+
+.input-box,
+.result-box {
+  display: none;
+}
+
+.input-box > fieldset {
+  margin-top: 20px;
+}
+
+fieldset {
+  background-color: #f8fcff;
+  padding: 10px;
+  margin: 50px 20px 50px 20px;
+  height: fit-content;
+  border: 1px #05a95b solid;
+  border-radius: 12px;
+  color: #05a95b;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.option-btn,
+.submit-btn {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.option-btn {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.option-btn > button {
+  width: 100%;
+}
+
+.submit-btn {
+  margin: 50px 0 20px 0;
+}
+
+.input-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  height: auto;
+  margin: 20px 0 20px 0;
+}
+
+.wrap-input {
+  display: block;
+  text-align: center;
+  width: auto;
+}
+
+.wrap-input > p {
+  margin: 0 0 5px 0;
+}
+
+.wrap-input > input {
+  padding: 0 20px 0 20px;
+  width: 100px;
+  height: 42px;
+  border: 1.5px #c9e9f3 solid;
+  border-radius: 12px;
+  color: #05a95b;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#wrap-a,
+#wrap-b,
+#wrap-c,
+#wrap-h {
+  display: none;
+}
+
+.submit-btn {
+  justify-content: center;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+input {
+  cursor: text;
+}
+
+button {
+  background-color: #ffffff;
+  width: 100px;
+  height: 42px;
+  margin: 0 20px 0 20px;
+  border: 1px #c9e9f3 solid;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #05a95b;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+button:hover {
+  background-color: azure;
+  border: 1.5px #05a95b solid;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+#hitung-btn,
+#reset-btn {
+  width: 100px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+}
+
+#hitung-btn {
+  background-color: #05a95b;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#hitung-btn:hover {
+  opacity: 0.9;
+}
+
+#reset-btn {
+  background-color: #ffffff;
+  color: #05a95b;
+  font-weight: bold;
+  border: 1px #c9e9f3 solid;
+}
+
+#reset-btn:hover {
+  background-color: azure;
+  border: 1.5px #05a95b solid;
+}
+
+footer {
+  text-align: center;
+  position: relative;
+  color: rgba(0, 0, 0, 0.2);
+}
